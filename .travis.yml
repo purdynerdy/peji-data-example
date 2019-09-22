@@ -13,6 +13,7 @@ script:
 deploy:
   - provider: script
     script: peji button make-buttons data.json
+    skip_cleanup: true
     on:
       tags: true
   - provider: releases
