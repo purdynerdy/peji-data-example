@@ -1,26 +1,19 @@
-dist: xenial # required for Python >= 3.7
+dist: xenial
 language: python
 python:
-  - "3.7"
-
+- '3.7'
 install:
-  - pip install git+https://github.com/darkowlzz/peji.git
-
+- pip install git+https://github.com/darkowlzz/peji.git
 script:
-  - peji config update-release-data darkowlzz/peji-data-example data/data.csv
-  - cat data.json
-
+- peji config update-release-data darkowlzz/peji-data-example data/data.csv
+- cat data.json
+before_deploy:
+  - peji button make-buttons data.json
 deploy:
-  - provider: script
-    script: peji button make-buttons data.json
-    skip_cleanup: true
-    on:
-      tags: true
-  - provider: releases
-    api_key:
-      secure:
-    file:
-      - data.json
-    skip_cleanup: true
-    on:
-      tags: true
+  provider: releases
+  api_key:
+    secure: PJJJzE983eMujQ/4Qt0ao/3PK3XmC6hm58Jh9k0IS+KzG8r7n/f+oCMYonrqzovAXevssib8Ezg8e+QddhIMXUaLlXY0nOGTzG2zSAxf8iYzjOzgPiGd3rp38moPi2bgcSb8vpP0j1ZX/R+WQ+lDNQtF95XCASFG0IwuM96I2FLehuzRaOE8hkvvjjq8/zHojU6VhW/7psZGL3W2nN6Cl1Gl1cgd0Pnk9TFaFHUflTv/iK8rdZRBN54yFi5dgcTjy1LnxA4UYX/lV1yqAVbonbIdxAXdNYSPl8GLUrQfmlRTlwKTfNG3ydXf0nCWJipk9x53MQYxocyc5jb++jaPLmKC4SHpOYKiTcmkz/JrpjZFRfqgvMXlqDM0HLrwbJAswkFjXTcOw3vG4BIr0lHhUIkMZeCl6bDxJCQZf/1ckry2p//bNuWIHNOfptJF7GxVckY6RHGzTVNOJWdGgxdCn03YXE85zV8gzfj3tND6fxccUnKpdm2PLU4ABim2m9u6WXuJpCijU4GuaJHWiDrEObeYzD3PNsAg85b4zHc0np50rFBiiPdQvKU9P/yy4sglhVZ8h4d2tQw0xZsnmvN/Qd8VT7qWodYzEtYTQstEGNCq3rWlt1VXh4ODG0dqGpcq4+BQQrr4sp89TuS+dtqTxik5IZH+zW46pR77M5XJgYw=
+  file: data.json
+  skip_cleanup: true
+  on:
+    tags: true
