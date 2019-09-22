@@ -1,0 +1,25 @@
+dist: xenial # required for Python >= 3.7
+language: python
+python:
+  - "3.7"
+
+install:
+  - pip install git+https://github.com/darkowlzz/peji.git
+
+script:
+  - peji config update-release-data darkowlzz/peji-data-example data/data.csv
+  - cat data.json
+
+deploy:
+  - provider: script
+    script: peji button make-buttons data.json
+    on:
+      tags: true
+  - provider: releases
+    api_key:
+      secure:
+    file:
+      - data.json
+    skip_cleanup: true
+    on:
+      tags: true
