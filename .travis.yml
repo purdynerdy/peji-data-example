@@ -5,14 +5,14 @@ python:
 install:
 - pip install git+https://github.com/darkowlzz/peji.git
 script:
-- peji config update-release-data darkowlzz/peji-data-example data/data.csv
+- peji config update-release-data purdynerdy/peji-data-example data/data.csv
 - cat data.json
 before_deploy:
   - peji button make-buttons data.json
 deploy:
   provider: releases
   api_key:
-    secure: PJJJzE983eMujQ/4Qt0ao/3PK3XmC6hm58Jh9k0IS+KzG8r7n/f+oCMYonrqzovAXevssib8Ezg8e+QddhIMXUaLlXY0nOGTzG2zSAxf8iYzjOzgPiGd3rp38moPi2bgcSb8vpP0j1ZX/R+WQ+lDNQtF95XCASFG0IwuM96I2FLehuzRaOE8hkvvjjq8/zHojU6VhW/7psZGL3W2nN6Cl1Gl1cgd0Pnk9TFaFHUflTv/iK8rdZRBN54yFi5dgcTjy1LnxA4UYX/lV1yqAVbonbIdxAXdNYSPl8GLUrQfmlRTlwKTfNG3ydXf0nCWJipk9x53MQYxocyc5jb++jaPLmKC4SHpOYKiTcmkz/JrpjZFRfqgvMXlqDM0HLrwbJAswkFjXTcOw3vG4BIr0lHhUIkMZeCl6bDxJCQZf/1ckry2p//bNuWIHNOfptJF7GxVckY6RHGzTVNOJWdGgxdCn03YXE85zV8gzfj3tND6fxccUnKpdm2PLU4ABim2m9u6WXuJpCijU4GuaJHWiDrEObeYzD3PNsAg85b4zHc0np50rFBiiPdQvKU9P/yy4sglhVZ8h4d2tQw0xZsnmvN/Qd8VT7qWodYzEtYTQstEGNCq3rWlt1VXh4ODG0dqGpcq4+BQQrr4sp89TuS+dtqTxik5IZH+zW46pR77M5XJgYw=
+    secure: FFg5O7CC5vcCrTr2wJIjoot1tO8acR5YcVzCGPWpyArdb5WErBuiF+NMLrXfayF3wswhH683QO33Ln+meI+A16gQ/FPD9pc8MGsbdlzOS3TN8WKK1NhrHrgDONg98LUtzjCxmmRN88u5bNBTCByZIUA96Gz7HvVQeXD5kGVZiq0GM7HbYvfWL2M7WcWeRAvFr56UuHm9z2hZZsSi4VJFxKkoolL4b03Bx0eevuSaAJrPJFV6VYLpKoK11C0uinxpcvuFUqrRB+SA/k6N5ctLIbqFiOu47Mf2OBkWsAntyv+bX70Z+pfO/lv5705kD76OAoyCSZgXo50GyhI/5WezpdASjeO1qVakhdiyR1j5S9A7D1hIMwH9sYogWcitV7Q/1YjcN3T/BNIzUQ+2GuwePZu0z8RUASty/yFSyO3u7UznUkU05G/fbxQ9HjkxQYAVSeMQBZD2Ca8hADh8odjIS7pNy6CxO+yk03yhL+DX9AePFCdizUEdKj3GzYnilgurlP5fkjlxd/MbRpGarmjwtIdlOdQ1/82NN4YVsrFCZqcX5dT3LmVmphgMVbze0w1PRt2MBA5QzkxfcfU292L+wVIGe/sXhvD3aSv0t8yKSYlbMEoCi+FR9smjGzLUyjo8sL/DOXxK702S4t1rYr+mFG8HHFvWmTVtLPe9j0hbS0U=
   file: data.json
   skip_cleanup: true
   on:
