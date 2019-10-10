@@ -1,23 +1,37 @@
-Name,Size,Price,Medium,ID number,Catalog,Availability
-Look Deeper 0_0,15x20,300.00,Watercolor,1,1,1
-Confrontation of Vulnerability,11x14,150.00,Acrylic,2,1,1
-Unamused,5x7,50.00,Acrylic,3,1,1
-Jellyfish,5x7,50.00,Acrylic,4,1,1
-Watching,5x7,50.00,Acrylic,5,1,1
-Strife with a kindred Spirit,9x12,100.00,Acrylic,6,1,0
-Crowded Lonliness,11x14,250.00,Acrylic,7,1,0
-Expansion into Twilight,16x20,350.00,Acrylic,8,1,1
-Night in Shining Armor,15x20,300.00,Watercolor,9,2,1
-The Door,15x20,350.00,Watercolor,10,2,1
-The Beatles,18x24,500.00,Watercolor,11,2,1
-Alien Landscape,9x12,150.00,Watercolor,12,2,1
-Abstract eye postcard,4x6,10.00,Watercolor,13,2,1
-Nature is watching,15x20,400.00,Watercolor,14,2,1
-Into the Abyss,11x14,300.00,Acrylic,15,2,1
-Infinite exquisite stasis,15x20,350.01,Watercolor,16,1,1
-A new entry,5x5,33,Digital,17,1,0
-New entry in cat 2,10x5,100,Digital,18,2,1
-New entry in cat 1, 15x10,90,Digital,19,1,1
-New new entry in cat 2,10x1,50,Acrylic,20,2,1
-Test entry in cat 1,4x4,400,Digital,21,1,1
-Test entry2 in cat 2,2x2,200,Digital,22,2,1
+Name,Size,Price,Medium,ID number,Description
+Look Deeper,15x20,300,Watercolor,1,
+Confrontation of Vulnerability,11x14,150,Acrylic,2,
+Unamused,5x7,50,Acrylic,3,
+Jellyfish,5x7,50,Acrylic,4,
+Watching,5x7,50,Acrylic,5,
+Strife with a kindred Spirit,9x12,100,Acrylic,6,unavailable
+Crowded Lonliness,11x14,250,Acrylic,7,
+Expansion into Twilight,16x20,350,Acrylic,8,
+Night in Shining Armor,15x20,300,Watercolor,9,
+The Door,15x20,350,Watercolor,10,
+The Beatles,18x24,500,Watercolor,11,
+Alien Landscape,9x12,150,Watercolor,12,
+Abstract eye postcard,4x6,10,Watercolor,13,
+Nature is watching,15x20,400,Watercolor,14,
+Into the Abyss,11x14,300,Acrylic,15,
+Infinite exquisite stasis,15x20,350,Watercolor,16,
+Blue Alien,5x7,50,Acrylic,17,
+Acrylic Abstract,5x7,50,Acrylic,18,pink and yellow bars
+Geometric Spider,5x7,50,Acrylic,19,
+Tentacool,5x7,50,Acrylic,20,
+Abstract postcard,4x6,10,Ink,21,grey yellow pink orange teal blue with eyes
+Abstract door postcard,4x6,10,Watercolor,22,
+Robot postcard,4x6,10,Watercolor,23,
+Camping Card,5x7,12,Marker,24,
+Abstract eye card,5x7,12,Colored pencil,25,
+Impassioned Eruption,9x12,150,Watercolor,26,
+Extraterrestrial Kinship,8x10,75,Acrylic,27,
+Disclosing the compass,8x10,75,Acrylic,28,
+Extraneous Civilization,8x10,100,Acrylic,29,
+Elevation of Alchemy,8x10,125,Acrylic,30,
+Inferno of Puzzlement,9x12,150,Acrylic,31,
+Vulnerability,9x12,75,Acrylic,32,
+Marching through the extension,11x14,300,Acrylic,33,
+Astounding Transmission,11x14,300,Acrylic,34,
+Mechanism of the master,8x10,125,Acrylic,35,
+Egress of delusion,8x10,75,Acrylic,36,
