@@ -3,7 +3,7 @@ language: python
 python:
 - '3.7'
 install:
-- pip install git+https://github.com/darkowlzz/peji.git
+- pip install git+https://github.com/darkowlzz/peji.git@v0.0.4
 script:
 - peji config update-release-data purdynerdy/peji-data-example data/data.csv
 - cat data.json
